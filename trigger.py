@@ -39,7 +39,6 @@ def build():
     # 获取Jenkins - Crumb
 
     # requests.get("http://10.15.38.146:8080/jenkins/crumbIssuer/api/json")
-    
 
     requests.post('http://10.15.38.146:8080/jenkins/job/ci-java-job/buildWithParameters',
                   headers={
